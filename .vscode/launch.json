@@ -1,0 +1,219 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - PackageDemo",
+			"request": "launch",
+			"mainClass": "mypack.PackageDemo"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - PackageDemo",
+			"request": "launch",
+			"mainClass": "PackageDemo"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - ObjectDemo",
+			"request": "launch",
+			"mainClass": "ObjectDemo"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - ExceptionDemo5",
+			"request": "launch",
+			"mainClass": "ExceptionDemo5"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - ExceptionDemo3",
+			"request": "launch",
+			"mainClass": "ExceptionDemo3"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - ExceptionDemo2",
+			"request": "launch",
+			"mainClass": "ExceptionDemo2"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - ExceptionDemo",
+			"request": "launch",
+			"mainClass": "ExceptionDemo"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - InnerClassDemo4",
+			"request": "launch",
+			"mainClass": "InnerClassDemo4"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - InnerClassDemo3",
+			"request": "launch",
+			"mainClass": "InnerClassDemo3"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - InnerClassDemo3",
+			"request": "launch",
+			"mainClass": "InnerClassDemo3",
+			"projectName": "JavaViedo_fda91b54"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - InnerClassDemo2",
+			"request": "launch",
+			"mainClass": "InnerClassDemo2"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - InnerClassDemo",
+			"request": "launch",
+			"mainClass": "InnerClassDemo"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - DuoTaiDemo3",
+			"request": "launch",
+			"mainClass": "DuoTaiDemo3"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - DuoTaiDemo2",
+			"request": "launch",
+			"mainClass": "DuoTaiDemo2"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - DuoTaiDemo",
+			"request": "launch",
+			"mainClass": "DuoTaiDemo"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - InterfaceDemo",
+			"request": "launch",
+			"mainClass": "InterfaceDemo"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - AbstractDemo",
+			"request": "launch",
+			"mainClass": "AbstractDemo"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - AbstractDemo3",
+			"request": "launch",
+			"mainClass": "AbstractDemo3"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - TestDemo",
+			"request": "launch",
+			"mainClass": "TestDemo"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - AbstractDemo2",
+			"request": "launch",
+			"mainClass": "AbstractDemo2"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - AbstractDemo1",
+			"request": "launch",
+			"mainClass": "AbstractDemo1"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - AbstractTest",
+			"request": "launch",
+			"mainClass": "AbstractTest"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - ExtendsDemo3",
+			"request": "launch",
+			"mainClass": "ExtendsDemo3"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - ExtendsDemo2",
+			"request": "launch",
+			"mainClass": "ExtendsDemo2"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - ExtendsDemo",
+			"request": "launch",
+			"mainClass": "ExtendsDemo"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - SingleDemo",
+			"request": "launch",
+			"mainClass": "SingleDemo"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - ArrayToolDemo",
+			"request": "launch",
+			"mainClass": "ArrayToolDemo"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - MainDemo",
+			"request": "launch",
+			"mainClass": "MainDemo"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - StaticDemo",
+			"request": "launch",
+			"mainClass": "StaticDemo"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - ConsDemo",
+			"request": "launch",
+			"mainClass": "ConsDemo"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - StackDemo",
+			"request": "launch",
+			"mainClass": "StackDemo"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - ArrayToHex",
+			"request": "launch",
+			"mainClass": "ArrayToHex"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - ArrayDemo2",
+			"request": "launch",
+			"mainClass": "ArrayDemo2"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - ArrayDemo",
+			"request": "launch",
+			"mainClass": "ArrayDemo"
+		},
+		{
+			"type": "java",
+			"name": "Debug (Launch) - Current File",
+			"request": "launch",
+			"mainClass": "${file}"
+		}
+	]
+}
