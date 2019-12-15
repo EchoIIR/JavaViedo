@@ -1,0 +1,16 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - ThreadDemo2",
+      "request": "launch",
+      "mainClass": "ThreadDemo2"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - ThreadDemo",
+      "request": "launch",
+      "mainClass": "ThreadDemo"
+    }
+  ]
+}
