@@ -2,6 +2,24 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - SynStaticFunctionLockDemo",
+      "request": "launch",
+      "mainClass": "SynStaticFunctionLockDemo"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - SynFunctionDemo",
+      "request": "launch",
+      "mainClass": "SynFunctionDemo"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - TicketDemo",
+      "request": "launch",
+      "mainClass": "TicketDemo"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - ThreadDemo2",
       "request": "launch",
       "mainClass": "ThreadDemo2"

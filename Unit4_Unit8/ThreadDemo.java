@@ -14,7 +14,7 @@ class ThreadDemo{
 		new Demo();
 		new Demo();
 		new Demo();
-		System.gc();
+		System.gc();	// gc()运行垃圾回收器
 		new Demo();
 		System.out.println("Hello world.");
 	}
