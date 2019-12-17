@@ -2,6 +2,12 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - DeadLockTest",
+      "request": "launch",
+      "mainClass": "DeadLockTest"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - SynStaticFunctionLockDemo",
       "request": "launch",
       "mainClass": "SynStaticFunctionLockDemo"

@@ -11,6 +11,7 @@
   - [4.4 线程示例 - 买票](#44-线程示例-买票)
   - [4.5 多线程安全问题](#45-多线程安全问题)
   - [4.6 同步函数和同步代码块](#46-同步函数和同步代码块)
+  - [4.7 多线程下的单例](#47-多线程下的单例)
 - [五、常用对象API(SE15-SE20)](#五-常用对象apise15-se20)
 - [六、IO流（SE21-SE24)](#六-io流se21-se24)
 - [七、GUI(SE25)](#七-guise25)
@@ -25,8 +26,6 @@
 ![](images/java的两种线程1.png)
 ![](images/java的两种线程.png)
 ![](images/多线程概述2.png)
-
-
 
 ## 4.2 创建多线程
 **方法一：继承Thread类**
@@ -176,6 +175,50 @@ class SynFunctionDemo {
 	}
 }
 ```
+## 4.7 多线程下的单例
+```java
+// // 饿汉式
+// class Single{
+// 	private static final Single s = new Single();
+// 	private Single(){}
+// 	public static Single getInstance(){
+// 		return s;
+// 	}
+// }
+
+// 懒汉式(面试！！！)
+class Single {
+	private static Single s = null;
+
+	private Single() {
+	}
+
+	public static Single getInstance() {
+		// 共享数据
+		// 多条语句操作共享数据
+		if (s == null) {
+			synchronized (Single.class) {
+				if (s == null) {
+					s = new Single();
+				}
+			}
+		}
+		return s;
+	}
+}
+
+//
+class SingleDemo {
+	public static void main(String[] args) {
+		System.out.println("Hello world.");
+	}
+}
+```
+## 4.8 死锁
+**死锁的情景**
+> * 同步的嵌套
+
+
 
 # 五、常用对象API(SE15-SE20)
 
