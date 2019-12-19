@@ -2,6 +2,12 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - ResourceDemo",
+      "request": "launch",
+      "mainClass": "ResourceDemo"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - DeadLockTest",
       "request": "launch",
       "mainClass": "DeadLockTest"
