@@ -15,8 +15,9 @@
   - [4.8 死锁](#48-死锁)
   - [SE14](#se14)
   - [4.9 线程间通信](#49-线程间通信)
-  - [4.10 等待唤醒机制](#410-等待唤醒机制)
+  - [4.10 等待唤醒机制（未完成SE14）](#410-等待唤醒机制未完成se14)
 - [五、常用对象API(SE15-SE20)](#五-常用对象apise15-se20)
+  - [5.1 String类](#51-string类)
 - [六、IO流（SE21-SE24)](#六-io流se21-se24)
 - [七、GUI(SE25)](#七-guise25)
 - [八、网络编程(SE26)](#八-网络编程se26)
@@ -228,11 +229,24 @@ class SingleDemo {
 ![](images/不同任务的多线程公用资源.png)
 ![](images/不同任务的多线程成片输出原因.png)
 
-## 4.10 等待唤醒机制
+## 4.10 等待唤醒机制（未完成SE14）
 ![](images/等待唤醒机制.png )
 ![](images/等待唤醒机制2.png)
 
 # 五、常用对象API(SE15-SE20)
+## 5.1 String类
+![](images/String类.png)
+![](images/String对象一旦创建就不能改变.png)
+
+**不同String对象比较**
+> s:创建一个对象，在常量池中，由String类维护，不可变，可共享。
+> s1:创建两个对象：new的和“abc”在堆内存中。
+![](images/String对象2.png)
+
+**String类的方法**
+![](images/String对象方法1.png)
+![](images/String对象方法2.png)
+
 
 # 六、IO流（SE21-SE24)
 

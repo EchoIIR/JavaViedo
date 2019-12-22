@@ -2,6 +2,30 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - StringMethodDemo",
+      "request": "launch",
+      "mainClass": "cn.itcast.pl.string.demo.StringMethodDemo"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - StringMethodDemo",
+      "request": "launch",
+      "mainClass": "StringMethodDemo"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - StringConstructorDemo",
+      "request": "launch",
+      "mainClass": "cn.itcast.pl.string.demo.StringConstructorDemo"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - StringConstructorDemo",
+      "request": "launch",
+      "mainClass": "StringConstructorDemo"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - ResourceDemo",
       "request": "launch",
       "mainClass": "ResourceDemo"
