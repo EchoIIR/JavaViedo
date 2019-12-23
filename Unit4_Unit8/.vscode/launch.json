@@ -2,6 +2,38 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - StringTest",
+      "request": "launch",
+      "mainClass": "StringTest"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - StringObjectDemo",
+      "request": "launch",
+      "mainClass": "StringObjectDemo"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch) with Arguments Prompt",
+      "request": "launch",
+      "mainClass": "",
+      "args": "${command:SpecifyProgramArgs}"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Attach) - Remote",
+      "request": "attach",
+      "hostName": "<The host name or ip address of remote debuggee>",
+      "port": "<debug port of remote debuggee>"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)",
+      "request": "launch",
+      "mainClass": ""
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - StringMethodDemo",
       "request": "launch",
       "mainClass": "cn.itcast.pl.string.demo.StringMethodDemo"
