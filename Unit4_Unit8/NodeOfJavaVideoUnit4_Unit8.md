@@ -18,6 +18,18 @@
   - [4.10 等待唤醒机制（未完成SE14）](#410-等待唤醒机制未完成se14)
 - [五、常用对象API(SE15-SE20)](#五-常用对象apise15-se20)
   - [5.1 String类](#51-string类)
+    - [5.1.1 String类基础知识](#511-string类基础知识)
+    - [5.1.2 String类的方法](#512-string类的方法)
+      - [**1、获取**](#1-获取)
+      - [**2、转换**](#2-转换)
+      - [**3、判断**](#3-判断)
+      - [**4、比较**](#4-比较)
+      - [**5、intern方法**](#5-intern方法)
+    - [5.1.3 String的练习](#513-string的练习)
+      - [**1、字符串的排序:StringTest1.java**](#1-字符串的排序stringtest1java)
+      - [**2、一个子串在整串中出现的次数:StringTest2.java**](#2-一个子串在整串中出现的次数stringtest2java)
+      - [**3、两个字符串中最大相同的子串：StringTest3.java**](#3-两个字符串中最大相同的子串stringtest3java)
+      - [**4、模拟一个trim功能一致的方法：StringTest4.java**](#4-模拟一个trim功能一致的方法stringtest4java)
 - [六、IO流（SE21-SE24)](#六-io流se21-se24)
 - [七、GUI(SE25)](#七-guise25)
 - [八、网络编程(SE26)](#八-网络编程se26)
@@ -235,6 +247,7 @@ class SingleDemo {
 
 # 五、常用对象API(SE15-SE20)
 ## 5.1 String类
+### 5.1.1 String类基础知识
 ![](images/String类.png)
 ![](images/String对象一旦创建就不能改变.png)
 
@@ -243,19 +256,19 @@ class SingleDemo {
 > s1:创建两个对象：new的和“abc”在堆内存中。
 ![](images/String对象2.png)
 
-**String类的方法**
-**1、获取**
+### 5.1.2 String类的方法
+#### **1、获取**
 ![](images/String对象方法-获取.png)
 ![](images/String对象方法2.png)
 ![](images/String对象方法1.png)
 ![](images/String对象方法3.png)
 
-**2、转换**
+#### **2、转换**
 ![](images/String方法2_转换.png)
 
-**3、判断**
+#### **3、判断**
  String方法3_判断.png
-**4、比较**
+#### **4、比较**
 ```java
 package cn.itcast.pl.string.demo;
 
@@ -346,8 +359,22 @@ class StringMethodDemo{
 	}
 }
 ```
-**5、intern方法**
+#### **5、intern方法**
 返回字符串对象的规范化表示形式。
+
+### 5.1.3 String的练习
+#### **1、字符串的排序:StringTest1.java**
+![](images/StringTest1思路.png)
+
+#### **2、一个子串在整串中出现的次数:StringTest2.java**
+![](images/StringTest2思路.png)
+
+#### **3、两个字符串中最大相同的子串：StringTest3.java**
+![](images/StringTest3思路.png)
+![](images/StringTest3难点1.png)
+
+#### **4、模拟一个trim功能一致的方法：StringTest4.java**
+![](images/StringTest4思路.png)
 
 # 六、IO流（SE21-SE24)
 

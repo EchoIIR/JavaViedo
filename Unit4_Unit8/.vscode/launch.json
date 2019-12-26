@@ -2,101 +2,41 @@
   "configurations": [
     {
       "type": "java",
-      "name": "CodeLens (Launch) - StringTest",
+      "name": "CodeLens (Launch) - StringTest4",
       "request": "launch",
-      "mainClass": "StringTest"
+      "mainClass": "StringTest4",
+      "projectName": "Unit4_Unit8_9786e013"
     },
     {
       "type": "java",
-      "name": "CodeLens (Launch) - StringObjectDemo",
+      "name": "CodeLens (Launch) - StringTest3",
       "request": "launch",
-      "mainClass": "StringObjectDemo"
+      "mainClass": "StringTest3",
+      "projectName": "Unit4_Unit8_9786e013"
     },
     {
       "type": "java",
-      "name": "Debug (Launch) with Arguments Prompt",
+      "name": "CodeLens (Launch) - Helloworld",
       "request": "launch",
-      "mainClass": "",
-      "args": "${command:SpecifyProgramArgs}"
+      "mainClass": "Helloworld",
+      "projectName": "Unit4_Unit8_9786e013"
     },
     {
       "type": "java",
-      "name": "Debug (Attach) - Remote",
-      "request": "attach",
-      "hostName": "<The host name or ip address of remote debuggee>",
-      "port": "<debug port of remote debuggee>"
+      "name": "CodeLens (Launch) - StringTest2",
+      "request": "launch",
+      "mainClass": "StringTest2",
+      "projectName": "Unit4_Unit8_9786e013"
     },
     {
       "type": "java",
-      "name": "Debug (Launch)",
+      "name": "Debug (Launch) -Uglys",
       "request": "launch",
-      "mainClass": ""
-    },
-    {
-      "type": "java",
-      "name": "CodeLens (Launch) - StringMethodDemo",
-      "request": "launch",
-      "mainClass": "cn.itcast.pl.string.demo.StringMethodDemo"
-    },
-    {
-      "type": "java",
-      "name": "CodeLens (Launch) - StringMethodDemo",
-      "request": "launch",
-      "mainClass": "StringMethodDemo"
-    },
-    {
-      "type": "java",
-      "name": "CodeLens (Launch) - StringConstructorDemo",
-      "request": "launch",
-      "mainClass": "cn.itcast.pl.string.demo.StringConstructorDemo"
-    },
-    {
-      "type": "java",
-      "name": "CodeLens (Launch) - StringConstructorDemo",
-      "request": "launch",
-      "mainClass": "StringConstructorDemo"
-    },
-    {
-      "type": "java",
-      "name": "CodeLens (Launch) - ResourceDemo",
-      "request": "launch",
-      "mainClass": "ResourceDemo"
-    },
-    {
-      "type": "java",
-      "name": "CodeLens (Launch) - DeadLockTest",
-      "request": "launch",
-      "mainClass": "DeadLockTest"
-    },
-    {
-      "type": "java",
-      "name": "CodeLens (Launch) - SynStaticFunctionLockDemo",
-      "request": "launch",
-      "mainClass": "SynStaticFunctionLockDemo"
-    },
-    {
-      "type": "java",
-      "name": "CodeLens (Launch) - SynFunctionDemo",
-      "request": "launch",
-      "mainClass": "SynFunctionDemo"
-    },
-    {
-      "type": "java",
-      "name": "CodeLens (Launch) - TicketDemo",
-      "request": "launch",
-      "mainClass": "TicketDemo"
-    },
-    {
-      "type": "java",
-      "name": "CodeLens (Launch) - ThreadDemo2",
-      "request": "launch",
-      "mainClass": "ThreadDemo2"
-    },
-    {
-      "type": "java",
-      "name": "CodeLens (Launch) - ThreadDemo",
-      "request": "launch",
-      "mainClass": "ThreadDemo"
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "stopOnEntry": false,
+      "mainClass": "Uglys",
+      "args": ""
     }
   ]
 }
