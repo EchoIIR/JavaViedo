@@ -2,6 +2,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - WrapperTest",
+      "request": "launch",
+      "mainClass": "WrapperTest",
+      "projectName": "Unit4_Unit8_a99f6ccc"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - StringTest4",
       "request": "launch",
       "mainClass": "StringTest4",
