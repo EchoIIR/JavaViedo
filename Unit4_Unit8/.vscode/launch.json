@@ -2,6 +2,69 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - ListDemo2",
+      "request": "launch",
+      "mainClass": "src.cn.itcast.p4.list.demo.ListDemo2",
+      "projectName": "Unit4_Unit8_9786e013"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - ListDemo",
+      "request": "launch",
+      "mainClass": "src.cn.itcast.p4.list.demo.ListDemo",
+      "projectName": "Unit4_Unit8_9786e013"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - CollectionDemo",
+      "request": "launch",
+      "mainClass": "src.cn.itcast.p3.collection.demo.CollectionDemo",
+      "projectName": "Unit4_Unit8_9786e013"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - StringMethodDemo",
+      "request": "launch",
+      "mainClass": "cn.itcast.pl.string.demo.StringMethodDemo",
+      "projectName": "Unit4_Unit8_9786e013"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - StringObjectDemo",
+      "request": "launch",
+      "mainClass": "StringObjectDemo",
+      "projectName": "Unit4_Unit8_9786e013"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - StringBuilderTest",
+      "request": "launch",
+      "mainClass": "StringBuilderTest",
+      "projectName": "Unit4_Unit8_9786e013"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - StringbufferMethodDemo",
+      "request": "launch",
+      "mainClass": "StringbufferMethodDemo",
+      "projectName": "Unit4_Unit8_9786e013"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - WrapperTest",
+      "request": "launch",
+      "mainClass": "WrapperTest",
+      "projectName": "Unit4_Unit8_9786e013"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - StringTest",
+      "request": "launch",
+      "mainClass": "StringTest",
+      "projectName": "Unit4_Unit8_9786e013"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - WrapperTest",
       "request": "launch",
       "mainClass": "WrapperTest",
