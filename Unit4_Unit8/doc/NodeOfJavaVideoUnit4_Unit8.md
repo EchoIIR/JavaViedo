@@ -60,6 +60,9 @@
       - [3、迭代器在List中的使用](#3-迭代器在list中的使用)
       - [4、List的迭代器的练习：用listIterator实现在迭代器中对列表增删改查](#4-list的迭代器的练习用listiterator实现在迭代器中对列表增删改查)
       - [5、List的三个常用对象：Vector,ArrayList,LinkedList](#5-list的三个常用对象vectorarraylistlinkedlist)
+        - [1、List之Vector](#1-list之vector)
+        - [2、List之LinkedList](#2-list之linkedlist)
+        - [3、List之ArrayList](#3-list之arraylist)
     - [5.5.3 Collection集合框架的-Set接口](#553-collection集合框架的-set接口)
       - [1、Set特点](#1-set特点)
 - [六、IO流（SE21-SE24)](#六-io流se21-se24)
@@ -595,11 +598,201 @@ class ListDemo2{
 
 #### 5、List的三个常用对象：Vector,ArrayList,LinkedList
 ![](images/集合框架的构成与分类.png)
-**1、List的三个常用对象**
+**List的三个常用对象概述**
 ![](images/List的三个常用对象.png)
 
+##### 1、List之Vector
+![](images/Vector特有方法element.png)
+**Enumeration与Iterator区别**
+![](images/Enumeration与Iterator区别.png)
+```java
+package src.cn.itcast.p4.vector.demo;
+
+import java.util.Enumeration;
+import java.util.Iterator;
+import java.util.Vector;
+
+class VectorDemo{
+	public static void main(String[] args) {
+
+		Vector<String> v = new Vector<String>();
+
+		v.addElement("abc1");
+		v.addElement("abc2");
+		v.addElement("abc3");
+		v.addElement("abc4");
+		
+		Enumeration<String> en = v.elements();
+		while(en.hasMoreElements()){
+			System.out.println("nextElement:" + en.nextElement());
+		}
+
+		Iterator<String> it = v.iterator();
+		while(it.hasNext()){
+			System.out.println("next:" +it.next());
+		}
+		
+	}
+}
+```
+
+##### 2、List之LinkedList
+![](images/LinkedList.png)
+```java
+package src.cn.itcast.p4.linkedlist.test;
+
+import java.util.LinkedList;
+
+/* ====== 用LinkedList实现堆栈，队列 ======
+堆栈(FILO)：先进后出,First In Last Out : addFirst(),removeLast()
+队列(FIFO)：先进先出,First In First Out: addFirst(),removeFirst()
+    为了实现描述数据结构，并定义他们的方法，采用类封装，
+内部使用LinkedList实现。
+*/
+
+class MyDuiLie {
+	// LinkedList是Java的链表
+	private LinkedList<Object> link; 
+
+	// 构造函数
+	public MyDuiLie(){
+		this.link = new LinkedList<Object>();
+	}
+	// add方法
+	public void myAdd(Object obj){
+		link.addLast(obj);
+	}
+	// get方法
+	public Object myGet(){
+		Object obj;
+		// obj = link.getFirst();
+		obj = link.removeFirst();
+		return  obj;
+	}
+	// isNull用isEmpty实现
+	public boolean isNull(){
+		return link.isEmpty();
+	}
+}
+
+class MyStack {
+	// LinkedList是Java的链表
+	private LinkedList<Object> link; 
+
+	// 构造函数
+	public MyStack(){
+		this.link = new LinkedList<Object>();
+	}
+	// add方法
+	public void myAdd(Object obj){
+		link.addLast(obj);
+	}
+	// get方法
+	public Object myGet(){
+		Object obj;
+		// obj = link.getFirst();
+		obj = link.removeLast();
+		return  obj;
+	}
+	// isNull用isEmpty实现
+	public boolean isNull(){
+		return link.isEmpty();
+	}
+}
+class LinkedTest {
+	public static void main(String[] args) {
+		System.out.println("My DuiLie output:");
+		MyDuiLie d1 = new MyDuiLie();
+		d1.myAdd("abc1");
+		d1.myAdd("abc2");
+		d1.myAdd("abc3");
+		d1.myAdd("abc4");
+		while(!d1.isNull()){
+			System.out.println(d1.myGet());
+		}
+		System.out.println("My Stack output:");
+		MyStack s1 = new MyStack();
+		s1.myAdd("abc1");
+		s1.myAdd("abc2");
+		s1.myAdd("abc3");
+		s1.myAdd("abc4");
+
+		while(!s1.isNull()){
+			System.out.println(s1.myGet());
+		}
+	}
+}
+```
+##### 3、List之ArrayList
+
+```java
+package src.cn.itcast.p4.arraylist.test;
+/*
+1、ArrayList的对象可以通过add，添加Person的对象：add(new Person(21,"lisi1"));
+2、ArrayList的对象也可以使用迭代器，遍历其元素（Person的对象）。
+3、当ArrayList的对象为另一个类的对象时，可以先强制类型转换，然后就可以调用其方法了。
+*/ 
+import java.util.ArrayList;
+import java.util.Iterator;
+
+import src.cn.itcast.p.bean.Person;
+
+class ArrayListDemo {
+	public static void main(String[] args) {
+		ArrayList a1 = new ArrayList();
+
+		a1.add(new Person(21,"lisi1"));
+		a1.add(new Person(22,"lisi2"));
+		a1.add(new Person(23,"lisi3"));
+		a1.add(new Person(24,"lisi4"));
+		 
+		Iterator it = a1.iterator();
+		while(it.hasNext()){
+			// Object obj = it.next(); // it.next()出现一次，next自动往下走一次			
+			// System.out.println("Person.getName: " + ((Person) obj).getName());// 类型转化后调用方法getName
+			// System.out.println("Person.getAge: " + ((Person) obj).getAge());// 类型转化后调用方法getAge
+			
+			Person obj = (Person)it.next(); 
+			System.out.println("\n全类名：" + obj);// 打印全类名
+			System.out.println("类名getClass: " + obj.getClass());// 打印类名
+			System.out.println("Person.getAge: " + obj.getAge() + "\tPerson.getName: " + obj.getName());
+	
+		}
+		
+	}
+}
+```
 
 
+**java数组和链表比较**
+![](images/java数组和链表.png)
+
+**自动装箱,拆箱**
+> * **自动装箱**：基本数据类型值赋值给引用数据类型值时
+> * **自动拆箱**：基本数据类型和引用数据类型做运算的时候
+```	java
+    // 自动装箱eg1
+    ArrayList a2 = new ArrayList();
+    a2.add(1); // a2.add(new Integer(5));
+    
+    // 自动装箱eg2
+   
+    {
+       show1(6);
+    }
+    public static void show1(Object obj){
+      System.out.print(obj);// show(new Integer(6));
+    }
+    // 不用自动装箱：类型匹配，正常运行
+    show2(6);
+    public static void show2(int num){
+      System.out.print(num);
+    }
+    // 自动拆箱：基本数据类型和引用数据类型做运算的时候
+    public static void show3(Integer num){
+      num + 8;
+    }
+```    
 ### 5.5.3 Collection集合框架的-Set接口
 #### 1、Set特点
 > * 无序（也有有序的情况）

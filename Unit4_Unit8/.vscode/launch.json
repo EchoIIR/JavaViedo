@@ -2,6 +2,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - ArrayListDemo",
+      "request": "launch",
+      "mainClass": "src.cn.itcast.p4.arraylist.test.ArrayListDemo",
+      "projectName": "Unit4_Unit8_a99f6ccc"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - LinkedTest",
+      "request": "launch",
+      "mainClass": "src.cn.itcast.p4.linkedlist.test.LinkedTest",
+      "projectName": "Unit4_Unit8_a99f6ccc"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - LinkedListDemo",
+      "request": "launch",
+      "mainClass": "src.cn.itcast.p4.linkedlist.demo.LinkedListDemo",
+      "projectName": "Unit4_Unit8_a99f6ccc"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - VectorDemo",
+      "request": "launch",
+      "mainClass": "src.cn.itcast.p4.vector.demo.VectorDemo",
+      "projectName": "Unit4_Unit8_a99f6ccc"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - ListDemo2",
       "request": "launch",
       "mainClass": "src.cn.itcast.p4.list.demo.ListDemo2",
