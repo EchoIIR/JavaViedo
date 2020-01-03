@@ -59,12 +59,16 @@
       - [2、List方法](#2-list方法)
       - [3、迭代器在List中的使用](#3-迭代器在list中的使用)
       - [4、List的迭代器的练习：用listIterator实现在迭代器中对列表增删改查](#4-list的迭代器的练习用listiterator实现在迭代器中对列表增删改查)
-      - [5、List的三个常用对象：Vector,ArrayList,LinkedList](#5-list的三个常用对象vectorarraylistlinkedlist)
+      - [5、List的三个常用子类：Vector,ArrayList,LinkedList](#5-list的三个常用子类vectorarraylistlinkedlist)
         - [1、List之Vector](#1-list之vector)
         - [2、List之LinkedList](#2-list之linkedlist)
         - [3、List之ArrayList](#3-list之arraylist)
     - [5.5.3 Collection集合框架的-Set接口](#553-collection集合框架的-set接口)
       - [1、Set特点](#1-set特点)
+      - [2、Set方法](#2-set方法)
+      - [3、Set的两个常用子类HashSet,](#3-set的两个常用子类hashset)
+        - [1、Set之HashSet](#1-set之hashset)
+        - [2、Set之](#2-set之)
 - [六、IO流（SE21-SE24)](#六-io流se21-se24)
 - [七、GUI(SE25)](#七-guise25)
 - [八、网络编程(SE26)](#八-网络编程se26)
@@ -596,9 +600,9 @@ class ListDemo2{
 }
 ```
 
-#### 5、List的三个常用对象：Vector,ArrayList,LinkedList
+#### 5、List的三个常用子类：Vector,ArrayList,LinkedList
 ![](images/集合框架的构成与分类.png)
-**List的三个常用对象概述**
+**List的三个常用子类概述**
 ![](images/List的三个常用对象.png)
 
 ##### 1、List之Vector
@@ -797,9 +801,21 @@ class ArrayListDemo {
 #### 1、Set特点
 > * 无序（也有有序的情况）
 > * 元素不可重复
+#### 2、Set方法 
 
- 
+#### 3、Set的两个常用子类HashSet,
+##### 1、Set之HashSet
+![](images/HashSet1.png)
 
+**哈希表的两个判断**
+![](images/哈希表的两个判断.png)
+**哈希表的两个判断的疑问**
+![](images/哈希表的两个判断的疑问.png)
+
+**HashSet练习举例**
+![](images/HashSet2.png)
+
+##### 2、Set之 
 
 
 

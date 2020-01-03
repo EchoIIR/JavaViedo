@@ -2,6 +2,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - HashSetDemo2",
+      "request": "launch",
+      "mainClass": "src.cn.itcast.p5.set.hashset.HashSetDemo2",
+      "projectName": "Unit4_Unit8_a99f6ccc"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - HashSetDemo",
+      "request": "launch",
+      "mainClass": "src.cn.itcast.p5.set.hashset.HashSetDemo",
+      "projectName": "Unit4_Unit8_a99f6ccc"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - ArrayListDemo",
       "request": "launch",
       "mainClass": "src.cn.itcast.p4.arraylist.test.ArrayListDemo",
