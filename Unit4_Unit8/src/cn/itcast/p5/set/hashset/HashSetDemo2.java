@@ -8,34 +8,34 @@ import src.cn.itcast.p.bean.Person;
 
 class HashSetDemo2 {
 	public static void main(String[] args) {
-		ArrayList a1 = new ArrayList();
-		a1.add(new Person(21,"lisi1"));
-		a1.add(new Person(21,"lisi1"));
-		a1.add(new Person(22,"lisi2"));
-		a1.add(new Person(23,"lisi3"));
-		a1.add(new Person(24,"lisi4"));
-		a1.add(new Person(25,"lisi5"));
-		a1.add(new Person(26,"lisi6"));
-		a1.add(new Person(27,"lisi7"));
+		// ArrayList a1 = new ArrayList();
+		// a1.add(new Person(21,"lisi1"));
+		// a1.add(new Person(21,"lisi1"));
+		// a1.add(new Person(22,"lisi2"));
+		// a1.add(new Person(23,"lisi3"));
+		// a1.add(new Person(24,"lisi4"));
+		// a1.add(new Person(25,"lisi5"));
+		// a1.add(new Person(26,"lisi6"));
+		// a1.add(new Person(27,"lisi7"));
 		
-		System.out.println("===== Before a1:");
-		printArrayList(a1); 
+		// System.out.println("===== Before a1:");
+		// printArrayList(a1); 
 
-		a1 = getSingleElement(a1);
+		// a1 = getSingleElement(a1);
 
-		System.out.println("===== After a1:");
-		printArrayList(a1);
+		// System.out.println("===== After a1:");
+		// printArrayList(a1);
 
-		// ArrayList a2 = new ArrayList();
-		// a2.add("adc1");
-		// a2.add("adc1");
-		// a2.add("adc2");
-		// a2.add("adc2");
-		// a2.add("adc3");
-		// a2.add("adc4");
-		// System.out.println(a2);
-		// a2 = getSingleElement(a2);
-		// System.out.println(a2);
+		ArrayList a2 = new ArrayList();
+		a2.add("hehe");
+		a2.add("xixi");
+		a2.add("heihei");
+		a2.add("hehe");
+		a2.add("xixi");
+		a2.add("adc4");
+		System.out.println("Before getSingleElement:" + a2);
+		a2 = getSingleElement(a2);
+		System.out.println("After getSingleElement:" + a2);
 	}
 
 	private static void printArrayList(ArrayList a1) {

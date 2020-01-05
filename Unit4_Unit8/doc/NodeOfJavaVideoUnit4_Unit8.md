@@ -66,9 +66,9 @@
     - [5.5.3 Collection集合框架的-Set接口](#553-collection集合框架的-set接口)
       - [1、Set特点](#1-set特点)
       - [2、Set方法](#2-set方法)
-      - [3、Set的两个常用子类HashSet,](#3-set的两个常用子类hashset)
+      - [3、Set的两个常用子类HashSet,TreeSet](#3-set的两个常用子类hashsettreeset)
         - [1、Set之HashSet](#1-set之hashset)
-        - [2、Set之](#2-set之)
+        - [2、Set之TreeSet](#2-set之treeset)
 - [六、IO流（SE21-SE24)](#六-io流se21-se24)
 - [七、GUI(SE25)](#七-guise25)
 - [八、网络编程(SE26)](#八-网络编程se26)
@@ -803,19 +803,25 @@ class ArrayListDemo {
 > * 元素不可重复
 #### 2、Set方法 
 
-#### 3、Set的两个常用子类HashSet,
+#### 3、Set的两个常用子类HashSet,TreeSet
 ##### 1、Set之HashSet
+**HashSet概述**
+![](images/HashSet小结.png)
+
+**HashSet说明**
 ![](images/HashSet1.png)
 
 **哈希表的两个判断**
 ![](images/哈希表的两个判断.png)
+
 **哈希表的两个判断的疑问**
 ![](images/哈希表的两个判断的疑问.png)
 
 **HashSet练习举例**
 ![](images/HashSet2.png)
 
-##### 2、Set之 
+##### 2、Set之TreeSet
+
 
 
 

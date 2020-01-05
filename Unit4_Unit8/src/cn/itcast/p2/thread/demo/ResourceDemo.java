@@ -10,10 +10,10 @@ class Resource {
 	String sex;
 }
 
-class Input implements Runnable {
+class Input2 implements Runnable {
 	Resource r;
 
-	Input(Resource r) {
+	Input2(Resource r) {
 		this.r = r;
 	}
 
@@ -36,10 +36,10 @@ class Input implements Runnable {
 }
 
 // 输出
-class Output implements Runnable {
+class Output2 implements Runnable {
 	Resource r;
 
-	Output(Resource r) {
+	Output2(Resource r) {
 		this.r = r;
 	}
 
@@ -59,8 +59,8 @@ class ResourceDemo {
 		// 创建资源
 		Resource r = new Resource();// 煤
 		// 创建任务
-		Input in = new Input(r); // 大卡车1
-		Output out = new Output(r); // 大卡车2
+		Input2 in = new Input2(r); // 大卡车1
+		Output2 out = new Output2(r); // 大卡车2
 		// 创建线程，执行路径
 		Thread t1 = new Thread(in); // 大卡车1在高速1
 		Thread t2 = new Thread(out); // 大卡车2在高速2
