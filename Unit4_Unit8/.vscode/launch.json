@@ -2,6 +2,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - MapDemo",
+      "request": "launch",
+      "mainClass": "src.cn.itcast.p5.map.demo.MapDemo",
+      "projectName": "Unit4_Unit8_9786e013"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - TreeSetDemo2SortString",
+      "request": "launch",
+      "mainClass": "src.cn.itcast.p6.treeset.demo.TreeSetDemo2SortString",
+      "projectName": "Unit4_Unit8_9786e013"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - TreeSetDemo",
       "request": "launch",
       "mainClass": "src.cn.itcast.p6.treeset.demo.TreeSetDemo",

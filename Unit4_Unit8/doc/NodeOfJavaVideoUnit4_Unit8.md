@@ -69,6 +69,9 @@
       - [3、Set的两个常用子类HashSet,TreeSet](#3-set的两个常用子类hashsettreeset)
         - [1、Set之HashSet](#1-set之hashset)
         - [2、Set之TreeSet](#2-set之treeset)
+    - [5.5.4 集合容器List和Set小结](#554-集合容器list和set小结)
+  - [5.6、集合框架：Map<K,V>](#56-集合框架mapkv)
+    - [5.6.1、Map概述](#561-map概述)
 - [六、IO流（SE21-SE24)](#六-io流se21-se24)
 - [七、GUI(SE25)](#七-guise25)
 - [八、网络编程(SE26)](#八-网络编程se26)
@@ -821,11 +824,13 @@ class ArrayListDemo {
 ![](images/HashSet2.png)
 
 ##### 2、Set之TreeSet
+**ThreeSet二叉树结构**
+![](images/ThreeSet二叉数结构.png)
 **ThreeSet小结**
 ![](images/ThreeSet小结.png)
 **ThreeSet直接添加出现的问题**
 ![](images/ThreeSet直接添加出现的问题.png)
-**解决方法一：添加的对象实现Comparable接口，并覆写compareTo方法**
+**解决方式一：添加的对象实现Comparable接口，并覆写compareTo方法**
 ```java
 // 为了让ThreeSet添加的Person有序，可以让Person中实现 compareTo方法
 	// =============== 改动一：实现Comparable接口 ======
@@ -862,7 +867,8 @@ public class Person2 /*extends Object*/ implements Comparable{
 	}
 }
 ```
-**解决方法二：实现比较器：ComparatorByName,并在创建TreeSet 时传入比较器**
+**解决方式二：实现比较器：ComparatorByName,并在创建TreeSet 时传入比较器**
+* TreeSetDemo.java中的改动
 ```java	:TreeSetDemo.java
 			TreeSet ts2 = new TreeSet(new ComparatorByName()); // 传入比较器
 			System.out.println("TreeSet的add成功与否：\t"+ ts2.add(new Person2(21,"lisi1"))); 
@@ -877,6 +883,7 @@ public class Person2 /*extends Object*/ implements Comparable{
 				System.out.println("Person.getAge: " + obj.getAge() + "\tPerson.getName: " + obj.getName() + "\t全类名：" + obj);
 			}
 ```
+* ComparatorByName.java中的改动
 ``` java: ComparatorByName.java
 package src.cn.itcast.p6.treeset.demo;
 
@@ -899,6 +906,13 @@ class ComparatorByName implements Comparator{
 	}
 }
 ```
+### 5.5.4 集合容器List和Set小结
+**集合容器List和Set小结**
+![](images/集合容器List和Set小结.png)
+
+## 5.6、集合框架：Map<K,V>
+### 5.6.1、Map概述
+![](images/Map方法.png)
 
 # 六、IO流（SE21-SE24)
 
