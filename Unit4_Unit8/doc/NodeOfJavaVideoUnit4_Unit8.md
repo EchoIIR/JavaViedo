@@ -821,9 +821,84 @@ class ArrayListDemo {
 ![](images/HashSet2.png)
 
 ##### 2、Set之TreeSet
+**ThreeSet小结**
+![](images/ThreeSet小结.png)
+**ThreeSet直接添加出现的问题**
+![](images/ThreeSet直接添加出现的问题.png)
+**解决方法一：添加的对象实现Comparable接口，并覆写compareTo方法**
+```java
+// 为了让ThreeSet添加的Person有序，可以让Person中实现 compareTo方法
+	// =============== 改动一：实现Comparable接口 ======
+public class Person2 /*extends Object*/ implements Comparable{
+	//....省略 ...
+	// =============== 改动二：覆写compareTo方法 ======
+	@Override
+	public int compareTo(Object o) {
+		/*==== return：从小到大排序。
+	-1或者负数：this<o，o排在this之后
+	 1或者正数：this>o，o排在this之前
+			 0：this=o, 集合中就不插入o了
+		*/  
 
+		// 按年龄排序
+		Person2 p = (Person2) o;
+		// =============== 写法一 =============
+		// if (this.age == p.getAge()){
+		// 	if(this.name == p.getName()){
+		// 		return 0; // 所有对象是一样的，如果是集合的话，后续的对象就不能添加进去。
+		// 	}else{
+		// 		// return 1;
+		// 		return this.name.compareTo(p.getName());
+		// 	}
+		// }else if (this.age>p.getAge()){
+		// 	return 1;//新的年龄小于原来的年龄，排在当前的后面
+		// }else {
+		// 	return -1;
+		// }	
+		
+		// ============= 写法二 ==================
+		int temp = this.age - p.getAge();	
+		return temp ==0 ? this.name.compareTo(p.getName()):temp;
+	}
+}
+```
+**解决方法二：实现比较器：ComparatorByName,并在创建TreeSet 时传入比较器**
+```java	:TreeSetDemo.java
+			TreeSet ts2 = new TreeSet(new ComparatorByName()); // 传入比较器
+			System.out.println("TreeSet的add成功与否：\t"+ ts2.add(new Person2(21,"lisi1"))); 
+			System.out.println("TreeSet的add成功与否：\t"+ ts2.add(new Person2(23,"lisi2"))); 
+            System.out.println("TreeSet的add成功与否：\t"+ ts2.add(new Person2(28,"lisi3"))); 
+            System.out.println("TreeSet的add成功与否：\t"+ ts2.add(new Person2(29,"lisi4"))); 
+            System.out.println("TreeSet的add成功与否：\t"+ ts2.add(new Person2(23,"lisi5"))); 
+			System.out.println("\n ======= 开始输出添加完对象后的TreeSet");
+			Iterator<Object> it2 = ts2.iterator();
+			while(it2.hasNext()){
+				Person2 obj = (Person2)it2.next(); 
+				System.out.println("Person.getAge: " + obj.getAge() + "\tPerson.getName: " + obj.getName() + "\t全类名：" + obj);
+			}
+```
+``` java: ComparatorByName.java
+package src.cn.itcast.p6.treeset.demo;
 
+import java.util.Comparator;
 
+import src.cn.itcast.p.bean.Person2;
+
+/* ====== 实现比较器：ComparatorByName
+*/ 
+class ComparatorByName implements Comparator{
+	@Override
+	public int compare(Object o1, Object o2) {
+		// TODO Auto-generated method stub
+		Person2 p1 = (Person2) o1;
+		Person2 p2 = (Person2) o2;
+
+		int temp = p1.getName().compareTo(p2.getName());
+		
+		return temp==0?p1.getAge()-p2.getAge():temp;
+	}
+}
+```
 
 # 六、IO流（SE21-SE24)
 

@@ -5,6 +5,13 @@
       "name": "CodeLens (Launch) - TreeSetDemo",
       "request": "launch",
       "mainClass": "src.cn.itcast.p6.treeset.demo.TreeSetDemo",
+      "projectName": "Unit4_Unit8_a99f6ccc"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - TreeSetDemo",
+      "request": "launch",
+      "mainClass": "src.cn.itcast.p6.treeset.demo.TreeSetDemo",
       "projectName": "Unit4_Unit8_9786e013"
     },
     {
