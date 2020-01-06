@@ -34,6 +34,16 @@ public class Person2 /*extends Object*/ implements Comparable{
 		this.name = name;
 	}
 
+
+	@Override
+	public String toString() {
+		return "{" +
+			" age='" + getAge() + "'" +
+			", name='" + getName() + "'" +
+			"}";
+	}
+
+
 	@Override
 	public boolean equals(Object obj) {
 		System.out.println("================ Running equals ============");
@@ -53,6 +63,14 @@ public class Person2 /*extends Object*/ implements Comparable{
 		System.out.println("this:" + this +"\tobj:" + obj + "\n"+ "this equals obj:\t"  + result);
 		return result;
 	}
+
+
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(age, name);
+	}
+
 
 	@Override
 	public int compareTo(Object o) {

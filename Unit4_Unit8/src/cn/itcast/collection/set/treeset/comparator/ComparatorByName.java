@@ -1,4 +1,4 @@
-package src.cn.itcast.p4.collection.set.treeset.comparator;
+package src.cn.itcast.collection.set.treeset.comparator;
 
 
 import java.util.Comparator;
@@ -10,7 +10,7 @@ import src.cn.itcast.p3.bean.Person2;
 public class ComparatorByName implements Comparator{
 	@Override
 	public int compare(Object o1, Object o2) {
-		// TODO Auto-generated method stub
+		// 实现对Person2及其子类按名称排序
 		Person2 p1 = (Person2) o1;
 		Person2 p2 = (Person2) o2;
 

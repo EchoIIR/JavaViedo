@@ -2,6 +2,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - ThreeMapDemo",
+      "request": "launch",
+      "mainClass": "src.cn.itcast.p5.map.treemap.ThreeMapDemo",
+      "projectName": "Unit4_Unit8_9786e013"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - HashMapDemo",
+      "request": "launch",
+      "mainClass": "src.cn.itcast.p5.map.hashmap.HashMapDemo",
+      "projectName": "Unit4_Unit8_9786e013"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - MapDemo",
       "request": "launch",
       "mainClass": "src.cn.itcast.p5.map.demo.MapDemo",

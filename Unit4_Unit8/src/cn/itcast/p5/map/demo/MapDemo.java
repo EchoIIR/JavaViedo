@@ -1,19 +1,57 @@
 package src.cn.itcast.p5.map.demo;
 
-import java.lang.reflect.Method;
+import java.util.Collection;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
+import java.util.Set;
 
 class MapDemo {
     public static void main(String[] args) {
         // <Integer,String>:学号，姓名
         Map<Integer,String> map = new HashMap<Integer,String>();
-        method1(map);   // 实现基础的增、删、改、查方法
+        // method1(map);   // 实现基础的增、删、改、查方法
         method2(map);   // 实现遍历map元素
 
     }
 
     public static void method2(Map<Integer, String> map) {
+        // 取初map中的所有value（遍历元素）
+        map.put(8, "lisi6");
+        map.put(2, "lisi7");
+        map.put(7, "lisi8");
+        map.put(6, "lisi9");
+        System.out.println("\nThe map is :\n" + map); 
+        // ============ 方法一：map.keySet() =========
+        System.out.println("\nmap.keySet()");
+        Set<Integer> keySet = map.keySet();
+        Iterator<Integer> it = keySet.iterator();
+        while(it.hasNext()){
+            Integer key = it.next();
+            String value = map.get(key);
+            System.out.println("key:" + key + "\tvalue:" + value);
+        }
+        // =========== 方法二：entrySet() ============= 
+        //  Map.Entry:嵌套接口
+        System.out.println("\nmap.entrySet()");
+        Set<Map.Entry<Integer, String>> entrySet = map.entrySet();
+        Iterator<Map.Entry<Integer, String>> it2 = entrySet.iterator();
+        while(it2.hasNext()){
+            Map.Entry<Integer, String>me =  it2.next();
+            Integer key = me.getKey();
+            String value = me.getValue();
+            System.out.println("key:" + key + "\tvalue:" + value);
+        }
+        // =========== 方法三：values() ============= 
+        //  Map.Entry:嵌套接口
+        System.out.println("\nmap.values()");
+        Collection<String> values = map.values();        //只返回values 
+        Iterator<String> it3 = values.iterator();
+        while(it3.hasNext()){
+            String value = it3.next();
+            System.out.println("value:" + value);
+        }
+    
     }
 
     public static void method1(Map<Integer, String> map) {

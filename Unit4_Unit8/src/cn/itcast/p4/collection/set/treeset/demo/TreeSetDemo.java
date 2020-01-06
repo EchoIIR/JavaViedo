@@ -4,8 +4,8 @@ package src.cn.itcast.p4.collection.set.treeset.demo;
 import java.util.Iterator;
 import java.util.TreeSet;
 
+import src.cn.itcast.collection.set.treeset.comparator.ComparatorByName;
 import src.cn.itcast.p3.bean.Person2;
-import src.cn.itcast.p4.collection.set.treeset.comparator.ComparatorByName;
 
 class TreeSetDemo{
     public static void main(String[] args) {

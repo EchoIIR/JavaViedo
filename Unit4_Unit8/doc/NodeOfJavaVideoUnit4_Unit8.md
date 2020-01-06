@@ -3,78 +3,85 @@
 
 <!-- code_chunk_output -->
 
-- [四、多线程（SE13-SE14）](#四-多线程se13-se14)
-  - [SE13](#se13)
-  - [4.1 多线程概述](#41-多线程概述)
-  - [4.2 创建多线程](#42-创建多线程)
-  - [4.3 线程的总结](#43-线程的总结)
-  - [4.4 线程示例 - 买票](#44-线程示例-买票)
-  - [4.5 多线程安全问题](#45-多线程安全问题)
-  - [4.6 同步函数和同步代码块](#46-同步函数和同步代码块)
-  - [4.7 多线程下的单例](#47-多线程下的单例)
-  - [4.8 死锁](#48-死锁)
-  - [SE14](#se14)
-  - [4.9 线程间通信](#49-线程间通信)
-  - [4.10 等待唤醒机制（未完成SE14）](#410-等待唤醒机制未完成se14)
-- [五、常用对象API(SE15-SE20)](#五-常用对象apise15-se20)
-  - [5.1 String类](#51-string类)
-    - [5.1.1 String类基础知识](#511-string类基础知识)
-    - [5.1.2 String类的方法](#512-string类的方法)
-      - [**1、获取**](#1-获取)
-      - [**2、转换**](#2-转换)
-      - [**3、判断**](#3-判断)
-      - [**4、比较**](#4-比较)
-      - [**5、intern方法**](#5-intern方法)
-    - [5.1.3 String的练习](#513-string的练习)
-      - [**1、字符串的排序:StringTest1.java**](#1-字符串的排序stringtest1java)
-      - [**2、一个子串在整串中出现的次数:StringTest2.java**](#2-一个子串在整串中出现的次数stringtest2java)
-      - [**3、两个字符串中最大相同的子串：StringTest3.java**](#3-两个字符串中最大相同的子串stringtest3java)
-      - [**4、模拟一个trim功能一致的方法：StringTest4.java**](#4-模拟一个trim功能一致的方法stringtest4java)
-  - [5.2 对象包装类](#52-对象包装类)
-    - [5.2.1 基本数据类型对象包装类概述](#521-基本数据类型对象包装类概述)
-      - [**1、基本数据类型包装类的作用**](#1-基本数据类型包装类的作用)
-      - [**2、基本数据类型包装类的进制转换**](#2-基本数据类型包装类的进制转换)
-      - [**3、int和Integer的区别:**](#3-int和integer的区别)
-      - [**4、JDK自动装箱拆箱**](#4-jdk自动装箱拆箱)
-    - [5.2.2 基本数据类型对象包装类练习](#522-基本数据类型对象包装类练习)
-  - [5.3 StringBuffer类](#53-stringbuffer类)
-    - [5.3.1 StringBuffer特点](#531-stringbuffer特点)
-    - [5.3.2 StringBuffer操作](#532-stringbuffer操作)
-  - [5.4 StringBuilder类](#54-stringbuilder类)
-    - [5.4.1 StringBuffer和StringBuilder对比](#541-stringbuffer和stringbuilder对比)
-      - [不同点：](#不同点)
-      - [联系：](#联系)
-    - [5.4.2 StringBuilder类练习：StringBuilderTest.java](#542-stringbuilder类练习stringbuildertestjava)
-    - [5.4.3 补充：JDK升级的原因](#543-补充jdk升级的原因)
-      - [1、简化书写](#1-简化书写)
-      - [2、提高效率](#2-提高效率)
-      - [3、增加安全性](#3-增加安全性)
-  - [5.5 集合框架:Collection](#55-集合框架collection)
-    - [5.5.1 集合框架的概述](#551-集合框架的概述)
-      - [1、集合框架的概述](#1-集合框架的概述)
-      - [2、集合框架的方法](#2-集合框架的方法)
-      - [3、补充：迭代器的原理](#3-补充迭代器的原理)
-    - [5.5.2 Collection集合框架-List接口](#552-collection集合框架-list接口)
-      - [1、List特点](#1-list特点)
-      - [2、List方法](#2-list方法)
-      - [3、迭代器在List中的使用](#3-迭代器在list中的使用)
-      - [4、List的迭代器的练习：用listIterator实现在迭代器中对列表增删改查](#4-list的迭代器的练习用listiterator实现在迭代器中对列表增删改查)
-      - [5、List的三个常用子类：Vector,ArrayList,LinkedList](#5-list的三个常用子类vectorarraylistlinkedlist)
-        - [1、List之Vector](#1-list之vector)
-        - [2、List之LinkedList](#2-list之linkedlist)
-        - [3、List之ArrayList](#3-list之arraylist)
-    - [5.5.3 Collection集合框架的-Set接口](#553-collection集合框架的-set接口)
-      - [1、Set特点](#1-set特点)
-      - [2、Set方法](#2-set方法)
-      - [3、Set的两个常用子类HashSet,TreeSet](#3-set的两个常用子类hashsettreeset)
-        - [1、Set之HashSet](#1-set之hashset)
-        - [2、Set之TreeSet](#2-set之treeset)
-    - [5.5.4 集合容器List和Set小结](#554-集合容器list和set小结)
-  - [5.6、集合框架：Map<K,V>](#56-集合框架mapkv)
-    - [5.6.1、Map概述](#561-map概述)
-- [六、IO流（SE21-SE24)](#六-io流se21-se24)
-- [七、GUI(SE25)](#七-guise25)
-- [八、网络编程(SE26)](#八-网络编程se26)
+- [四、多线程（SE13-SE14）](#%e5%9b%9b%e5%a4%9a%e7%ba%bf%e7%a8%8bse13-se14)
+	- [SE13](#se13)
+	- [4.1 多线程概述](#41-%e5%a4%9a%e7%ba%bf%e7%a8%8b%e6%a6%82%e8%bf%b0)
+	- [4.2 创建多线程](#42-%e5%88%9b%e5%bb%ba%e5%a4%9a%e7%ba%bf%e7%a8%8b)
+	- [4.3 线程的总结](#43-%e7%ba%bf%e7%a8%8b%e7%9a%84%e6%80%bb%e7%bb%93)
+	- [4.4 线程示例 - 买票](#44-%e7%ba%bf%e7%a8%8b%e7%a4%ba%e4%be%8b---%e4%b9%b0%e7%a5%a8)
+	- [4.5 多线程安全问题](#45-%e5%a4%9a%e7%ba%bf%e7%a8%8b%e5%ae%89%e5%85%a8%e9%97%ae%e9%a2%98)
+	- [4.6 同步函数和同步代码块](#46-%e5%90%8c%e6%ad%a5%e5%87%bd%e6%95%b0%e5%92%8c%e5%90%8c%e6%ad%a5%e4%bb%a3%e7%a0%81%e5%9d%97)
+	- [4.7 多线程下的单例](#47-%e5%a4%9a%e7%ba%bf%e7%a8%8b%e4%b8%8b%e7%9a%84%e5%8d%95%e4%be%8b)
+	- [4.8 死锁](#48-%e6%ad%bb%e9%94%81)
+	- [SE14](#se14)
+	- [4.9 线程间通信](#49-%e7%ba%bf%e7%a8%8b%e9%97%b4%e9%80%9a%e4%bf%a1)
+	- [4.10 等待唤醒机制（未完成SE14）](#410-%e7%ad%89%e5%be%85%e5%94%a4%e9%86%92%e6%9c%ba%e5%88%b6%e6%9c%aa%e5%ae%8c%e6%88%90se14)
+- [五、常用对象API(SE15-SE20)](#%e4%ba%94%e5%b8%b8%e7%94%a8%e5%af%b9%e8%b1%a1apise15-se20)
+	- [5.1 String类](#51-string%e7%b1%bb)
+		- [5.1.1 String类基础知识](#511-string%e7%b1%bb%e5%9f%ba%e7%a1%80%e7%9f%a5%e8%af%86)
+		- [5.1.2 String类的方法](#512-string%e7%b1%bb%e7%9a%84%e6%96%b9%e6%b3%95)
+			- [1、获取](#1%e8%8e%b7%e5%8f%96)
+			- [2、转换](#2%e8%bd%ac%e6%8d%a2)
+			- [3、判断](#3%e5%88%a4%e6%96%ad)
+			- [4、比较](#4%e6%af%94%e8%be%83)
+			- [5、intern方法](#5intern%e6%96%b9%e6%b3%95)
+		- [5.1.3 String的练习](#513-string%e7%9a%84%e7%bb%83%e4%b9%a0)
+			- [1、字符串的排序:StringTest1.java](#1%e5%ad%97%e7%ac%a6%e4%b8%b2%e7%9a%84%e6%8e%92%e5%ba%8fstringtest1java)
+			- [2、一个子串在整串中出现的次数:StringTest2.java](#2%e4%b8%80%e4%b8%aa%e5%ad%90%e4%b8%b2%e5%9c%a8%e6%95%b4%e4%b8%b2%e4%b8%ad%e5%87%ba%e7%8e%b0%e7%9a%84%e6%ac%a1%e6%95%b0stringtest2java)
+			- [3、两个字符串中最大相同的子串：StringTest3.java](#3%e4%b8%a4%e4%b8%aa%e5%ad%97%e7%ac%a6%e4%b8%b2%e4%b8%ad%e6%9c%80%e5%a4%a7%e7%9b%b8%e5%90%8c%e7%9a%84%e5%ad%90%e4%b8%b2stringtest3java)
+			- [4、模拟一个trim功能一致的方法：StringTest4.java](#4%e6%a8%a1%e6%8b%9f%e4%b8%80%e4%b8%aatrim%e5%8a%9f%e8%83%bd%e4%b8%80%e8%87%b4%e7%9a%84%e6%96%b9%e6%b3%95stringtest4java)
+	- [5.2 对象包装类](#52-%e5%af%b9%e8%b1%a1%e5%8c%85%e8%a3%85%e7%b1%bb)
+		- [5.2.1 基本数据类型对象包装类概述](#521-%e5%9f%ba%e6%9c%ac%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b%e5%af%b9%e8%b1%a1%e5%8c%85%e8%a3%85%e7%b1%bb%e6%a6%82%e8%bf%b0)
+			- [1、基本数据类型包装类的作用](#1%e5%9f%ba%e6%9c%ac%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b%e5%8c%85%e8%a3%85%e7%b1%bb%e7%9a%84%e4%bd%9c%e7%94%a8)
+			- [2、基本数据类型包装类的进制转换](#2%e5%9f%ba%e6%9c%ac%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b%e5%8c%85%e8%a3%85%e7%b1%bb%e7%9a%84%e8%bf%9b%e5%88%b6%e8%bd%ac%e6%8d%a2)
+			- [3、int和Integer的区别:](#3int%e5%92%8cinteger%e7%9a%84%e5%8c%ba%e5%88%ab)
+			- [4、JDK自动装箱拆箱](#4jdk%e8%87%aa%e5%8a%a8%e8%a3%85%e7%ae%b1%e6%8b%86%e7%ae%b1)
+		- [5.2.2 基本数据类型对象包装类练习](#522-%e5%9f%ba%e6%9c%ac%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b%e5%af%b9%e8%b1%a1%e5%8c%85%e8%a3%85%e7%b1%bb%e7%bb%83%e4%b9%a0)
+	- [5.3 StringBuffer类](#53-stringbuffer%e7%b1%bb)
+		- [5.3.1 StringBuffer特点](#531-stringbuffer%e7%89%b9%e7%82%b9)
+		- [5.3.2 StringBuffer操作](#532-stringbuffer%e6%93%8d%e4%bd%9c)
+	- [5.4 StringBuilder类](#54-stringbuilder%e7%b1%bb)
+		- [5.4.1 StringBuffer和StringBuilder对比](#541-stringbuffer%e5%92%8cstringbuilder%e5%af%b9%e6%af%94)
+			- [不同点：](#%e4%b8%8d%e5%90%8c%e7%82%b9)
+			- [联系：](#%e8%81%94%e7%b3%bb)
+		- [5.4.2 StringBuilder类练习：StringBuilderTest.java](#542-stringbuilder%e7%b1%bb%e7%bb%83%e4%b9%a0stringbuildertestjava)
+		- [5.4.3 补充：JDK升级的原因](#543-%e8%a1%a5%e5%85%85jdk%e5%8d%87%e7%ba%a7%e7%9a%84%e5%8e%9f%e5%9b%a0)
+			- [1、简化书写](#1%e7%ae%80%e5%8c%96%e4%b9%a6%e5%86%99)
+			- [2、提高效率](#2%e6%8f%90%e9%ab%98%e6%95%88%e7%8e%87)
+			- [3、增加安全性](#3%e5%a2%9e%e5%8a%a0%e5%ae%89%e5%85%a8%e6%80%a7)
+	- [5.5 集合框架：Collection和Map](#55-%e9%9b%86%e5%90%88%e6%a1%86%e6%9e%b6collection%e5%92%8cmap)
+		- [5.5.1 集合框架的概述](#551-%e9%9b%86%e5%90%88%e6%a1%86%e6%9e%b6%e7%9a%84%e6%a6%82%e8%bf%b0)
+		- [5.5.2 集合框架分类](#552-%e9%9b%86%e5%90%88%e6%a1%86%e6%9e%b6%e5%88%86%e7%b1%bb)
+			- [1、集合框架的构成与分类](#1%e9%9b%86%e5%90%88%e6%a1%86%e6%9e%b6%e7%9a%84%e6%9e%84%e6%88%90%e4%b8%8e%e5%88%86%e7%b1%bb)
+			- [2、Collection和Map的区别](#2collection%e5%92%8cmap%e7%9a%84%e5%8c%ba%e5%88%ab)
+		- [5.5.2 Collection](#552-collection)
+			- [1、Collection的方法](#1collection%e7%9a%84%e6%96%b9%e6%b3%95)
+			- [2、补充：迭代器的原理](#2%e8%a1%a5%e5%85%85%e8%bf%ad%e4%bb%a3%e5%99%a8%e7%9a%84%e5%8e%9f%e7%90%86)
+		- [5.5.2 Collection之List](#552-collection%e4%b9%8blist)
+			- [3、List特点](#3list%e7%89%b9%e7%82%b9)
+			- [4、List方法](#4list%e6%96%b9%e6%b3%95)
+			- [5、迭代器在List中的使用](#5%e8%bf%ad%e4%bb%a3%e5%99%a8%e5%9c%a8list%e4%b8%ad%e7%9a%84%e4%bd%bf%e7%94%a8)
+			- [6、List的迭代器的练习：用listIterator实现在迭代器中对列表增删改查](#6list%e7%9a%84%e8%bf%ad%e4%bb%a3%e5%99%a8%e7%9a%84%e7%bb%83%e4%b9%a0%e7%94%a8listiterator%e5%ae%9e%e7%8e%b0%e5%9c%a8%e8%bf%ad%e4%bb%a3%e5%99%a8%e4%b8%ad%e5%af%b9%e5%88%97%e8%a1%a8%e5%a2%9e%e5%88%a0%e6%94%b9%e6%9f%a5)
+			- [5、List的三个常用子类：Vector,ArrayList,LinkedList](#5list%e7%9a%84%e4%b8%89%e4%b8%aa%e5%b8%b8%e7%94%a8%e5%ad%90%e7%b1%bbvectorarraylistlinkedlist)
+				- [1、List之Vector](#1list%e4%b9%8bvector)
+				- [2、List之LinkedList](#2list%e4%b9%8blinkedlist)
+				- [3、List之ArrayList](#3list%e4%b9%8barraylist)
+		- [5.5.3 Collection之Set接口](#553-collection%e4%b9%8bset%e6%8e%a5%e5%8f%a3)
+			- [1、Set特点](#1set%e7%89%b9%e7%82%b9)
+			- [2、Set方法](#2set%e6%96%b9%e6%b3%95)
+			- [3、Set的两个常用子类HashSet,TreeSet](#3set%e7%9a%84%e4%b8%a4%e4%b8%aa%e5%b8%b8%e7%94%a8%e5%ad%90%e7%b1%bbhashsettreeset)
+				- [1、Set之HashSet](#1set%e4%b9%8bhashset)
+				- [2、Set之TreeSet](#2set%e4%b9%8btreeset)
+		- [5.5.4 Collection的List与Set小结](#554-collection%e7%9a%84list%e4%b8%8eset%e5%b0%8f%e7%bb%93)
+		- [5.5.6、Map&lt;K,V&gt;](#556mapltkvgt)
+			- [1、Map概述](#1map%e6%a6%82%e8%bf%b0)
+			- [2、Map的常用子类](#2map%e7%9a%84%e5%b8%b8%e7%94%a8%e5%ad%90%e7%b1%bb)
+				- [Map之Hashtable](#map%e4%b9%8bhashtable)
+				- [Map之HashMap](#map%e4%b9%8bhashmap)
+				- [Map之TreeMap](#map%e4%b9%8btreemap)
+- [六、IO流（SE21-SE24)](#%e5%85%adio%e6%b5%81se21-se24)
+- [七、GUI(SE25)](#%e4%b8%83guise25)
+- [八、网络编程(SE26)](#%e5%85%ab%e7%bd%91%e7%bb%9c%e7%bc%96%e7%a8%8bse26)
 
 <!-- /code_chunk_output -->
 
@@ -511,37 +518,43 @@ class StringBuilderTest{
 ####  2、提高效率
 #### 3、增加安全性
 
-## 5.5 集合框架:Collection
+## 5.5 集合框架：Collection和Map
 
 ### 5.5.1 集合框架的概述
-
-#### 1、集合框架的概述
 ![](images/集合框架的概述.png)
 
-![](images/集合框架的构成与分类.png)
-#### 2、集合框架的方法
-![](images/集合框架的方法.png)
+### 5.5.2 集合框架分类
 
-#### 3、补充：迭代器的原理
+#### 1、集合框架的构成与分类
+![](images/集合框架的构成与分类.png)
+#### 2、Collection和Map的区别
+![](images/Collection和Map的区别.png)
+
+
+### 5.5.2 Collection
+
+#### 1、Collection的方法
+![](images/集合框架的方法.png)
+#### 2、补充：迭代器的原理
 ![](images/集合迭代器的作用与原理.png)
 
-### 5.5.2 Collection集合框架-List接口
-#### 1、List特点
+### 5.5.2 Collection之List
+#### 3、List特点
 > * 有序
 > * 元素可重复
 > * 元素有索引
 
-#### 2、List方法
+#### 4、List方法
 ![](images/List方法.png)
 
-#### 3、迭代器在List中的使用
+#### 5、迭代器在List中的使用
 **Iterator方法总结**
 ![](images/Iterator方法总结.png)
 
 **ListIterator**
 ![](images/ListIterator方法.png)
 
-#### 4、List的迭代器的练习：用listIterator实现在迭代器中对列表增删改查
+#### 6、List的迭代器的练习：用listIterator实现在迭代器中对列表增删改查
 ```java
 package src.cn.itcast.p4.list.demo;
 import java.util.ArrayList;
@@ -605,6 +618,7 @@ class ListDemo2{
 
 #### 5、List的三个常用子类：Vector,ArrayList,LinkedList
 ![](images/集合框架的构成与分类.png)
+
 **List的三个常用子类概述**
 ![](images/List的三个常用对象.png)
 
@@ -800,7 +814,7 @@ class ArrayListDemo {
       num + 8;
     }
 ```    
-### 5.5.3 Collection集合框架的-Set接口
+### 5.5.3 Collection之Set接口
 #### 1、Set特点
 > * 无序（也有有序的情况）
 > * 元素不可重复
@@ -906,13 +920,60 @@ class ComparatorByName implements Comparator{
 	}
 }
 ```
-### 5.5.4 集合容器List和Set小结
+### 5.5.4 Collection的List与Set小结
 **集合容器List和Set小结**
 ![](images/集合容器List和Set小结.png)
 
-## 5.6、集合框架：Map<K,V>
-### 5.6.1、Map概述
+### 5.5.6、Map<K,V>
+#### 1、Map概述
+**1、Map基础方法**
 ![](images/Map方法.png)
+**2、map遍历所有键值对的方法**
+![](images/map遍历所有键值对的方法.png)
+```java
+    public static void method2(Map<Integer, String> map) {
+        // 取初map中的所有value（遍历元素）
+        map.put(8, "lisi6");
+        map.put(2, "lisi7");
+        map.put(7, "lisi8");
+        map.put(6, "lisi9");
+        System.out.println("\nThe map is :\n" + map); 
+        // ============ 方法一：map.keySet() =========
+        System.out.println("\nmap.keySet()");
+        Set<Integer> keySet = map.keySet();
+        Iterator<Integer> it = keySet.iterator();
+        while(it.hasNext()){
+            Integer key = it.next();
+            String value = map.get(key);
+            System.out.println("key:" + key + "\tvalue:" + value);
+        }
+        // =========== 方法二：entrySet() ============= 
+        //  Map.Entry:嵌套接口
+        System.out.println("\nmap.entrySet()");
+        Set<Map.Entry<Integer, String>> entrySet = map.entrySet();
+        Iterator<Map.Entry<Integer, String>> it2 = entrySet.iterator();
+        while(it2.hasNext()){
+            Map.Entry<Integer, String>me =  it2.next();
+            Integer key = me.getKey();
+            String value = me.getValue();
+            System.out.println("key:" + key + "\tvalue:" + value);
+        }
+        // =========== 方法三：values() ============= 
+        //  Map.Entry:嵌套接口
+        System.out.println("\nmap.values()");
+        Collection<String> values = map.values();        //只返回values 
+        Iterator<String> it3 = values.iterator();
+        while(it3.hasNext()){
+            String value = it3.next();
+            System.out.println("value:" + value);
+        }
+    
+```
+#### 2、Map的常用子类
+![](images/Collection和Map的区别.png)
+##### Map之Hashtable
+##### Map之HashMap
+##### Map之TreeMap
 
 # 六、IO流（SE21-SE24)
 

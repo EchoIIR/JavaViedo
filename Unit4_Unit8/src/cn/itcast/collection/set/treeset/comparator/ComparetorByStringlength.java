@@ -1,5 +1,4 @@
-package src.cn.itcast.p4.collection.set.treeset.comparator;
-
+package src.cn.itcast.collection.set.treeset.comparator;
 import java.util.Comparator;
 
 

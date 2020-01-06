@@ -3,7 +3,7 @@ package src.cn.itcast.p4.collection.set.treeset.demo;
 import java.util.Iterator;
 import java.util.TreeSet;
 
-import src.cn.itcast.p4.collection.set.treeset.comparator.ComparetorByStringlength;
+import src.cn.itcast.collection.set.treeset.comparator.ComparetorByStringlength;
 
 /* ===== 练习：对字符串按长度排序
 
