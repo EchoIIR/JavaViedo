@@ -24,7 +24,7 @@ class TreeSetDemo{
 
         // ====== 二、TreeSet存对象 ================
             System.out.println("\n====== 集合TreeSet中存对象-取重复对象（new之后不算重复） ========");
-            TreeSet ts2 = new TreeSet(new ComparatorByName()); // 传入比较器
+            TreeSet<Person2> ts2 = new TreeSet<Person2> (new ComparatorByName()); // 传入比较器
             // TreeSet ts2 = new TreeSet();
 
 			System.out.println("TreeSet的add成功与否：\t"+ ts2.add(new Person2(21,"lisi1"))); // 不算重复元素
@@ -34,7 +34,7 @@ class TreeSetDemo{
             System.out.println("TreeSet的add成功与否：\t"+ ts2.add(new Person2(23,"lisi5"))); // 不算重复元素
 
 			System.out.println("\n ======= 开始输出添加完对象后的TreeSet");
-			Iterator<Object> it2 = ts2.iterator();
+			Iterator<Person2> it2 = ts2.iterator();
 			while(it2.hasNext()){
 				Person2 obj = (Person2)it2.next(); 
 				System.out.println("Person.getAge: " + obj.getAge() + "\tPerson.getName: " + obj.getName() + "\t全类名：" + obj);

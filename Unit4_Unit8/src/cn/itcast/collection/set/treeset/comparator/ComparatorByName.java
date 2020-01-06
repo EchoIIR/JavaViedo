@@ -7,7 +7,7 @@ import src.cn.itcast.p3.bean.Person2;
 
 /* ====== 实现比较器：ComparatorByName
 */ 
-public class ComparatorByName implements Comparator{
+public class ComparatorByName implements Comparator<Object>{
 	@Override
 	public int compare(Object o1, Object o2) {
 		// 实现对Person2及其子类按名称排序

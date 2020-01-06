@@ -4,7 +4,7 @@ import java.util.Objects;
 // 为ThreeSet设计的Person类，
 // 1、实现Comparable接口
 // 2、并覆写compareTo方法
-public class Person2 /*extends Object*/ implements Comparable{
+public class Person2 /*extends Object*/ implements Comparable<Object>{
 	private int age;
 	private String name;
 

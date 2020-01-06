@@ -12,7 +12,7 @@ import src.cn.itcast.collection.set.treeset.comparator.ComparetorByStringlength;
 class TreeSetDemo2SortString {
     public static void main(String[] args) {
 
-        TreeSet ts = new TreeSet(new ComparetorByStringlength());
+        TreeSet<String> ts = new TreeSet<String> (new ComparetorByStringlength());
 
         ts.add("aaaa");
         ts.add("zz");
@@ -22,7 +22,7 @@ class TreeSetDemo2SortString {
         ts.add("e");
 
         // 默认排序：
-        Iterator it = ts.iterator();
+        Iterator<String> it = ts.iterator();
         while(it.hasNext()){
             System.out.println(it.next());
         }

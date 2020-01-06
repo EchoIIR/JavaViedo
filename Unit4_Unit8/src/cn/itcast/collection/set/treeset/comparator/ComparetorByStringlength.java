@@ -4,11 +4,11 @@ import java.util.Comparator;
 
 /* ====== 实现比较器：ComparatorByName
 */ 
-public class ComparetorByStringlength implements Comparator{
+public class ComparetorByStringlength implements Comparator<Object>{
 
     @Override
     public int compare(Object o1, Object o2) {
-		// TODO Auto-generated method stub
+
 		String str1 = (String) o1;
 		String str2 = (String) o2;
 

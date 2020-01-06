@@ -79,6 +79,8 @@
 				- [Map之Hashtable](#map%e4%b9%8bhashtable)
 				- [Map之HashMap](#map%e4%b9%8bhashmap)
 				- [Map之TreeMap](#map%e4%b9%8btreemap)
+	- [5.6 泛型](#56-%e6%b3%9b%e5%9e%8b)
+		- [5.6.1 泛型的概述](#561-%e6%b3%9b%e5%9e%8b%e7%9a%84%e6%a6%82%e8%bf%b0)
 - [六、IO流（SE21-SE24)](#%e5%85%adio%e6%b5%81se21-se24)
 - [七、GUI(SE25)](#%e4%b8%83guise25)
 - [八、网络编程(SE26)](#%e5%85%ab%e7%bd%91%e7%bb%9c%e7%bc%96%e7%a8%8bse26)
@@ -974,6 +976,14 @@ class ComparatorByName implements Comparator{
 ##### Map之Hashtable
 ##### Map之HashMap
 ##### Map之TreeMap
+
+## 5.6 泛型
+### 5.6.1 泛型的概述
+**泛型的背景：java是强类型语言**
+![](images/泛型的背景.png)
+**泛型概述**
+![](images/泛型概述.png)
+
 
 # 六、IO流（SE21-SE24)
 
