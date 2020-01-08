@@ -81,6 +81,10 @@
 				- [Map之TreeMap](#map%e4%b9%8btreemap)
 	- [5.6 泛型](#56-%e6%b3%9b%e5%9e%8b)
 		- [5.6.1 泛型的概述](#561-%e6%b3%9b%e5%9e%8b%e7%9a%84%e6%a6%82%e8%bf%b0)
+		- [5.6.2 集合之泛型类](#562-%e9%9b%86%e5%90%88%e4%b9%8b%e6%b3%9b%e5%9e%8b%e7%b1%bb)
+			- [1、泛型自定义类的演示](#1%e6%b3%9b%e5%9e%8b%e8%87%aa%e5%ae%9a%e4%b9%89%e7%b1%bb%e7%9a%84%e6%bc%94%e7%a4%ba)
+			- [2、泛型通配符:GenericDefineDemo5.java](#2%e6%b3%9b%e5%9e%8b%e9%80%9a%e9%85%8d%e7%ac%a6genericdefinedemo5java)
+	- [5.7 集合框架小结](#57-%e9%9b%86%e5%90%88%e6%a1%86%e6%9e%b6%e5%b0%8f%e7%bb%93)
 - [六、IO流（SE21-SE24)](#%e5%85%adio%e6%b5%81se21-se24)
 - [七、GUI(SE25)](#%e4%b8%83guise25)
 - [八、网络编程(SE26)](#%e5%85%ab%e7%bd%91%e7%bb%9c%e7%bc%96%e7%a8%8bse26)
@@ -983,10 +987,40 @@ class ComparatorByName implements Comparator{
 ![](images/泛型的背景.png)
 **泛型概述**
 ![](images/泛型概述.png)
+**泛型的应用**
+![](images/TreeSet存Person2排序的两种手段.png)
 
+### 5.6.2 集合之泛型类
+#### 1、泛型自定义类的演示
+> **问题一：** 想要实现定义工具类，用于操作所有对象方法：使用Object，使用泛型类<>
+> **问题二：** 泛型类中的不同类型的方法：show,print,method
+        1、**public <W> void show(W w)**，定义了新泛型W，
+             故虽然tool2是<String>，可以正确输出
+        2、**public void print(QQ str)**，使用了Tool的泛型QQ，
+             故Tool对象tool2是什么类型，print的参数就是什么类型
+        3、**public static <Y> void method(Y y)**，静态泛型方法
+             static类型时，不能访问类上定义的静态默认泛型方法，只能定义在方法上。
+                调用时要be accessed in a static way：Tool.method(Y y);
+> 见GenericDefineDemo3.java和Tool.java文件。
+> **问题三：泛型接口的实现** 见GenericDefineDemo4.java
+		1、泛型接口默认方法，实现泛型接口
+		2、泛型接口新定义泛型方法，实现泛型接口
 
+#### 2、泛型通配符:GenericDefineDemo5.java
+> **1、** 泛型通配符:  <?>
+> **2、** 泛型:< T>
+> **3、** 打印一种类型:Student,泛型:   < Student>
+> **4、** 上限：打印Person2及其子类:   <? extends Person2>
+	通常存数据时使用上限类型。
+> **5、** 下限：打印Student及其父类:   <? super Student>
+	通常对集合元素取出操作时用下限类型。
+
+## 5.7 集合框架小结
+
+	
 # 六、IO流（SE21-SE24)
 
 # 七、GUI(SE25)
 
 # 八、网络编程(SE26)
+ 

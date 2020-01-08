@@ -2,6 +2,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - GenericDefineDemo5",
+      "request": "launch",
+      "mainClass": "src.cn.itcast.p6.generic.define.GenericDefineDemo5",
+      "projectName": "Unit4_Unit8_9786e013"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - GenericDefineDemo4",
+      "request": "launch",
+      "mainClass": "src.cn.itcast.p6.generic.define.GenericDefineDemo4",
+      "projectName": "Unit4_Unit8_9786e013"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - GenericDefineDemo3",
+      "request": "launch",
+      "mainClass": "src.cn.itcast.p6.generic.define.GenericDefineDemo3",
+      "projectName": "Unit4_Unit8_9786e013"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - GenericDemo2",
       "request": "launch",
       "mainClass": "src.cn.itcast.p6.generic.demo.GenericDemo2",
