@@ -90,6 +90,7 @@
     - [5.7.3 静态导入](#573-静态导入)
   - [5.8 集合框架小结](#58-集合框架小结)
 - [六、IO流（SE21-SE24)](#六-io流se21-se24)
+  - [6.1、IO流概述](#61-io流概述)
 - [七、GUI(SE25)](#七-guise25)
 - [八、网络编程(SE26)](#八-网络编程se26)
 
@@ -1031,10 +1032,19 @@ class ComparatorByName implements Comparator{
 ### 5.7.3 静态导入
 ![](images/静态导入.png)
 
-
 ## 5.8 集合框架小结
-	
+![](images/Collection和Map.png)
+
 # 六、IO流（SE21-SE24)
+## 6.1、IO流概述
+**IO流概述**
+![](images/IO流概述.png)
+
+**IO流概念表**
+![](images/IO流概念表.png)
+
+**IO流常用基类**
+![](images/IO流常用基类.png)
 
 # 七、GUI(SE25)
 
